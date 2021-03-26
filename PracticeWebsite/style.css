@@ -1,0 +1,439 @@
+body {
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  height: 5em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 161em;
+  background-color: #333;
+  left: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.8em;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: seagreen;
+}
+
+.info-text {
+  display: flex;
+  width: 15em;
+  height: 30em;
+  font-size: 28px;
+}
+
+#image-flexer {
+  top: 13em;
+  position: absolute;
+  display: flex;
+  flex-flow: wrap row-reverse;
+  margin: auto;
+  justify-content: space-around;
+}
+
+/* ports css */
+
+#flexbox {
+  position: relative;
+  text-align: center;
+}
+
+#flash-card {
+  position: relative;
+  top: 3em;
+  left: 44.5em;
+  width: 30em;
+  height: 15em;
+  background-color: lightblue;
+}
+
+#card-text {
+  font-size: 3em;
+  position: relative;
+  top: 2em;
+}
+
+#check-btn {
+  position: relative;
+  left: -9.05em;
+  top: 3.5em;
+  font-size: 1.8em;
+}
+
+#new-btn {
+  position: relative;
+  left: -9.1em;
+  top: 3.5em;
+  font-size: 1.8em;
+}
+
+#input {
+  position: relative;
+  top: 1.5em;
+  left: 5.6em;
+  font-size: 2.4em;
+}
+
+/* tcp css */
+
+#flexbox-2 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+.src-port {
+  position: relative;
+  margin: 0, auto;
+  top: 8.4em;
+  background-color: gray;
+  width: 59em;
+  height: 4em;
+}
+
+.dest-port {
+  position: relative;
+  margin: 0, auto;
+  top: 8.4em;
+  background-color: darkgray;
+  width: 60em;
+  height: 4em;
+}
+
+.seq-number {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 12.5em;
+  left: 1;
+  background-color: lightskyblue;
+  width: 119em;
+  height: 4em;
+}
+
+.ack-number {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 16.6em;
+  left: 1;
+  background-color: seagreen;
+  width: 119em;
+  height: 4em;
+}
+
+.data-offset {
+  position: absolute;
+  margin: 0.5em, 1em;
+  top: 20.75em;
+  left: 1;
+  background-color: red;
+  width: 8em;
+  height: 10em;
+}
+
+.reserved {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 8.1em;
+  background-color: darkslategray;
+  width: 11em;
+  height: 10em;
+}
+
+.cwr {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 19.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.ece {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 24.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.urg {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 29.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.ack {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 34.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.psh {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 39.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.rst {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 44.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.syn {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 49.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.fin {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 54.3em;
+  background-color: yellow;
+  width: 4%;
+  height: 10em;
+}
+
+.window-size {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 20.75em;
+  left: 59.3em;
+  background-color: white;
+  width: 50.2%;
+  height: 10em;
+}
+
+.checksum {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 30.8em;
+  left: 1;
+  background-color: green;
+  width: 49.65%;
+  height: 10em;
+}
+
+.urgent-pointer {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 30.8em;
+  left: 59.3em;
+  background-color: gray;
+  width: 50.2%;
+  height: 10em;
+}
+
+.options {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 40.9em;
+  left: 1;
+  background-color: darkslategrey;
+  width: 119em;
+  height: 10em;
+}
+
+.data {
+  position: absolute;
+  margin: 0.5em, 0.5em;
+  top: 50.96em;
+  left: 1;
+  background-color: wheat;
+  width: 119em;
+  height: 10em;
+}
+
+.input {
+  text-align: center;
+  width: 2em;
+  height: 2em;
+}
+
+#tcp-check-answer,
+#tcp-reset {
+  left: -1.5em;
+  z-index: 2;
+  position: absolute;
+  top: 3.5em;
+  margin: 1em 2em;
+  height: 3em;
+  font-size: 20px;
+}
+
+#tcp-check-answer {
+  left: 3em;
+}
+
+#tcp-score {
+  left: 8em;
+  z-index: 2;
+  position: absolute;
+  top: 2.5em;
+  margin: 1em 2em;
+  height: 3em;
+  font-size: 30px;
+  color: white;
+}
+
+#src-port,
+#dest-port,
+#seq-number,
+#ack-number,
+#window-size,
+#checksum,
+#urgent-pointer,
+#options,
+#data {
+  width: 25em;
+}
+
+/* layer css */
+
+#counter1 {
+  position: absolute;
+  top: 5em;
+  left: 5em;
+}
+
+#counter2 {
+  position: absolute;
+  top: 8em;
+  left: 5em;
+}
+
+#btn-1 {
+  position: absolute;
+  top: 8em;
+  margin: 0 2em;
+  left: 80em;
+  height: 3em;
+}
+
+#btn-2 {
+  height: 3em;
+  position: absolute;
+  top: 8em;
+  left: 70em;
+}
+
+#flexbox-3 {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  width: 70%;
+  height: 90%;
+  top: 10em;
+  left: 18em;
+}
+
+.app-layer,
+.presentation-layer,
+.session-layer,
+.transport-layer,
+.network-layer,
+.datalink-layer,
+.physical-layer,
+.guide-text {
+  position: relative;
+  left: 10em;
+  width: 20em;
+  height: 4em;
+  background-color: lightgray;
+  border-style: solid;
+  border-color: black;
+  margin: 1em 1em;
+  text-align: center;
+  font-weight: bold;
+  color: darkslategray;
+}
+
+.app-prop,
+.presentation-prop,
+.session-prop,
+.transport-prop,
+.network-prop,
+.datalink-prop,
+.physical-prop,
+.guide-text-2 {
+  position: relative;
+  left: 10em;
+  width: 35em;
+  height: 4em;
+  background-color: gray;
+  border-style: solid;
+  border-color: black;
+  margin: 1em 1em;
+  text-align: center;
+  font-weight: bold;
+  color: lightgray;
+}
+span {
+  vertical-align: middle;
+  font-size: 42px;
+}
+
+input {
+  margin: 0.5em;
+  height: 50%;
+  font-size: 20px;
+}
+
+.protocols {
+  width: 80%;
+  font-size: 25px;
+}

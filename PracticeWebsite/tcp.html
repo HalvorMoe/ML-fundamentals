@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body onload="tcpOnLoad()">
+  <div id="nav-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ports.html">Ports</a></li>
+      <li><a class="active" href="tcp.html">TCP</a></li>
+      <li><a href="layers.html">Layers</a></li>
+    </ul>
+  </div>
+  <br>
+
+  <button id="tcp-check-answer" onclick="checkAnswerTcp()">CHECK ANSWER</button>
+  <button id="tcp-reset" onclick="reset()">RESET</button>
+  <p id="tcp-score">Rearrange the text values below in correct sequence (ctrl + a + backspace is recommended to clear text field)</p>
+
+  <div id="flexbox-2">
+    <div class="flexbox-2-item, src-port">
+      <input class="input" id="src-port" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, dest-port">
+      <input class="input" id="dest-port" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, seq-number">
+      <input class="input" id="seq-number" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, ack-number ">
+      <input class="input" id="ack-number" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, data-offset">
+      <input class="input" id="data-offset" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, reserved">
+      <input class="input" id="reserved" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, cwr">
+      <input class="input" id="cwr" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, ece">
+      <input class="input" id="ece" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, urg">
+      <input class="input" id="urg" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, ack">
+      <input class="input" id="ack" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, psh">
+      <input class="input" id="psh" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, rst">
+      <input class="input" id="rst" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, syn">
+      <input class="input" id="syn" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, fin">
+      <input class="input" id="fin" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, window-size">
+      <input class="input" id="window-size" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, checksum">
+      <input class="input" id="checksum" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, urgent-pointer">
+      <input class="input" id="urgent-pointer" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, options">
+      <input class="input" id="options" type="text" value="">
+    </div>
+    <div class="flexbox-2-item, data">
+      <input class="input" id="data" type="text" value="">
+    </div>
+  </div>
+  
+</body>
+</html>

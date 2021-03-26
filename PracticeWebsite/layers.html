@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="nav-bar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="ports.html">Ports</a></li>
+      <li><a href="tcp.html">TCP</a></li>
+      <li><a class="active" href="layers.html">Layers</a></li>
+    </ul>
+  </div>
+
+    <p id="counter1"> </p>
+    <p id="counter2"> </p>
+    <button id="btn-1" onclick="reset()">RESET</button>
+    <button id="btn-2" onclick="checkAnswerLayer()">CHECK ANSWERS</button>
+  <div id="flexbox-3">
+    <div class="flexbox-3-item, guide-text"><span>LAYER NAME</span></div>
+    <div class="flexbox-3-item, app-layer"><input id="app-layer" type="text" value=""></div>
+    <div class="flexbox-3-item, presentation-layer"><input id="pres-layer" type="text" value=""></div>
+    <div class="flexbox-3-item, session-layer"><input id="sess-layer"  type="text" value=""></div>
+    <div class="flexbox-3-item, transport-layer"><input id="trans-layer"  type="text" value=""></div>
+    <div class="flexbox-3-item, network-layer"><input id="nwrk-layer"  type="text" value=""></div>
+    <div class="flexbox-3-item, datalink-layer"><input id="data-layer"  type="text" value=""></div>
+    <div class="flexbox-3-item, physical-layer"><input id="phys-layer"  type="text" value=""></div>
+    <div class="flexbox-3-item, guide-text-2"><span>PROTOCOL</span></div>
+    <div class="flexbox-3-item, app-prop"><input id="app-prot" type="text" value=""></div>
+    <div class="flexbox-3-item, presentation-prop"><input id="pres-prot"type="text" value=""></div>
+    <div class="flexbox-3-item, session-prop"><input id="sess-prot" type="text" value=""></div>
+    <div class="flexbox-3-item, transport-prop"><input id="trans-prot" type="text" value=""></div>
+    <div class="flexbox-3-item, network-prop"><input id="nwrk-prot" type="text" value=""></div>
+    <div class="flexbox-3-item, datalink-prop"><input id="data-prot" type="text" value=""></div>
+    <div class="flexbox-3-item, physical-prop"><input id="phys-prot" type="text" value=""></div>
+  </div>
+</body>
+</html>

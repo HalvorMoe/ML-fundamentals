@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="nav-bar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a class="active"href="ports.html">Ports</a></li>
+      <li><a href="tcp.html">TCP</a></li>
+      <li><a href="layers.html">Layers</a></li>
+    </ul>
+  </div>
+  <br>
+  <div id="flexbox">
+    <header class="flexbox-item, flexbox-item-1">Welcome to the PORT section!</header>
+    <p class="flexbox-item, flexbox-item-2">On this page we will be testing your port number memory, are you ready?</p>
+    <br>
+    <br>
+    <p class="flexbox-item, flexbox-item-3">Click the button below to start!</p>
+    <br>
+    <button id="start-btn" class="flexbox-item, flexbox-item-4" onclick="startClick()">START</button>
+    <br>
+    <div id="flash-card" class="flexbox-item, flexbox-item-5">
+      <p id="card-text" class="flexbox-item, flexbox-item-6"></p>
+    </div>
+    <input id="input" class="flexbox-item, flexbox-item-9" type="text" value="type your answer here">
+    <button id="check-btn" class="flexbox-item, flexbox-item-7" onclick="checkAnswer()">CHECK ANSWER</button>
+    <button id="new-btn" class="flexbox-item, flexbox-item-8" onclick="document.getElementById('card-text').innerHTML = newCard()">NEW CARD</button>
+
+  </div>
+  
+  
+</body>
+</html>
