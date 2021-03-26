@@ -13,7 +13,6 @@
         binaryDone.innerHTML = result;
       }
 
-
       //Funksjon for å regne desimal til hexadesimal
 
       function regnutFire() {
